@@ -87,9 +87,9 @@ namespace Elite.Buttons
 
             if (HandleProfile(deviceInfo, profiles, Profile.ProfileType.OnFoot, EliteData.StatusData.OnFoot)) return;
 
-            if (HandleProfile(deviceInfo, profiles, Profile.ProfileType.AnalysisMode, EliteData.StatusData.HudInAnalysisMode)) return;
-            if (HandleProfile(deviceInfo, profiles, Profile.ProfileType.CargoScoop, EliteData.StatusData.CargoScoopDeployed)) return;
             if (HandleProfile(deviceInfo, profiles, Profile.ProfileType.Hardpoints, EliteData.StatusData.HardpointsDeployed)) return;
+            if (HandleProfile(deviceInfo, profiles, Profile.ProfileType.CargoScoop, EliteData.StatusData.CargoScoopDeployed)) return;
+            if (HandleProfile(deviceInfo, profiles, Profile.ProfileType.AnalysisMode, EliteData.StatusData.HudInAnalysisMode)) return;
 
             HandleProfile(deviceInfo, profiles, Profile.ProfileType.Main, true);
         }
